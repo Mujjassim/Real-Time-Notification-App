@@ -125,3 +125,16 @@ Response:
 
 connect with socket on PORT as mention in .env
 and pass token it header.
+
+### Project Architecture
+/server                # Backend server
+  /models              # Mongoose models
+    userModel.js       # User model
+    notificationModel.js # Notification model
+  /controllers         # Route controllers
+    authController.js  # Handles login
+    notificationController.js # Handles notifications
+  /routes              # API routes
+    authRoutes.js      # Auth routes (login)
+    notificationRoutes.js  # Notification routes
+  server.js            # Main server setup
